@@ -1,0 +1,10 @@
+[http]
+[http.cookies]
+[[http.listen]]
+port = 80
+[http.mounts]
+'/' = '../xo-web/dist/'
+[http.proxies]
+[redis]
+uri = 'redis://@redishost@:6379/0'
+[remoteOptions]
